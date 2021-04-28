@@ -17,6 +17,7 @@ type Setup struct {
 	User     string `yaml:"user"`
 	Password string `yaml:"password"`
 	Database string `yaml:"database"`
+	Jwt      string `yaml:"jwtauth"`
 }
 
 func readFile() error {
@@ -33,7 +34,7 @@ func readFile() error {
 
 	os.Setenv("postgres", info.Postgres)
 	os.Setenv("rabbitmq", info.RabbitMQ)
-
+	os.Setenv("jwtauth", info.Jwt)
 	return nil
 }
 

@@ -8,8 +8,6 @@
 <code> docker run -p 9123:9123 -it account-api </code>
  
 
-
-
 ## Start PostgreSQL from Docker 
 
 <code> docker-compose up -d </code>

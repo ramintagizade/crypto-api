@@ -12,4 +12,3 @@ services:
       - POSTGRES_PASSWORD=password
       - POSTGRES_DB=crypto
       - DATABASE_URL=postgres://admin:password@localhost:5432/crypto?sslmode=disable
-      - POSTGRES_HOST_AUTH_METHOD=trust
